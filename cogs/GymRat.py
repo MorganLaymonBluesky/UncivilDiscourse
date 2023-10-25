@@ -37,12 +37,12 @@ class GymRat(commands.Cog):
         elif multiplier > 18 and multiplier <= 20:
             baseDamage = 15
             if sb == 2:
-                finalDamage = 50
-                await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills paired with you GOD COMPLEX!')
+                finalDamage = 25
+                await ctx.send(f'WOW {ctx.author.mention}! YOUR OPPONENT WAS NOT READY FOR THE POWER OF YOUR GOD COMPLEX AND TREN COMBO!')
                 await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
             else:
                 finalDamage = baseDamage + round(((((multiplier - 3)/100) * baseDamage) * sb), 2)
-                await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills. Base damage increased to {baseDamage} and has a damage bonus of {(multiplier - 3)}%! (Rolled a {multiplier})')
+                await ctx.send(f'The biggest guy in the gym acknowledges your "Natural" gains {ctx.author.mention}!. Base damage increased to {baseDamage} and has a damage bonus of {(multiplier - 3)}%! (Rolled a {multiplier})')
                 await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
 
         await ctx.send(f'{round(finalDamage, 2)} Damage Dealt!')
@@ -50,7 +50,6 @@ class GymRat(commands.Cog):
         return [1, finalDamage]
 
 
-    ####### DONE #######
     #### LOW MOVE ####
     @commands.command()
     @commands.has_role("Gym Rat")
@@ -77,11 +76,11 @@ class GymRat(commands.Cog):
             if sb == 2:
                 finalDamage = 25
                 await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills paired with you GOD COMPLEX!')
-                await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
+                await ctx.send('https://tenor.com/view/dance-working-out-hyper-gif-14431409')
             else:
                 finalDamage = baseDamage + round(((((multiplier - 3)/100) * baseDamage) * sb), 2)
                 await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills. Base damage increased to {baseDamage} and has a damage bonus of {(multiplier - 3)}%! (Rolled a {multiplier})')
-                await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
+                await ctx.send('https://tenor.com/view/dance-working-out-hyper-gif-14431409')
 
         await ctx.send(f'{round(finalDamage, 2)} Damage Dealt!')
         attacker.buff = 1
@@ -89,10 +88,11 @@ class GymRat(commands.Cog):
         
 
 
+    #### MEDIUM MOVE ####
     @commands.command()
     @commands.has_role("Gym Rat")
     async def thighsOfThunder(self, ctx):
-        baseDamage = 10
+        baseDamage = 15
         finalDamage = 0
         multiplier = random.randrange(1, 20)
         attacker = game.get_player(ctx.author)
@@ -101,7 +101,7 @@ class GymRat(commands.Cog):
         # Bad Roll
         if multiplier < 3:
             baseDamage = 0
-            await ctx.send(f'You trip! {ctx.author.mention} you stomp nothing, but thank you for checking gravity. (Rolled a {multiplier})')
+            await ctx.send(f'{ctx.author.mention}....you have chicken legs. (Rolled a {multiplier})')
 
         # Successful Roll
         elif multiplier >= 3 and multiplier < 18:
@@ -110,25 +110,26 @@ class GymRat(commands.Cog):
 
         # High Roll
         elif multiplier > 18 and multiplier <= 20:
-            baseDamage = 14
+            baseDamage = 17
             if sb == 2:
-                finalDamage = 50
-                await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills paired with you GOD COMPLEX!')
-                await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
+                finalDamage = 30
+                await ctx.send(f'YOUR GOD COMPLEX AND THIGHS OVERSHADOW THE GOD OF THUNDER {ctx.author.mention}!')
+                await ctx.send('https://tenor.com/view/jnpr-noravalkyrie-nora-teamjnpr-rwby-gif-19309041')
             else:
                 finalDamage = baseDamage + round(((((multiplier - 3)/100) * baseDamage) * sb), 2)
-                await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills. Base damage increased to {baseDamage} and has a damage bonus of {(multiplier - 3)}%! (Rolled a {multiplier})')
-                await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
+                await ctx.send(f'{ctx.author.mention} THOR HIMSELF LOOKS UPON YOU IN ENVY OF THE THUNDER FROM YOUR THIGHS! Base damage increased to {baseDamage} and has a damage bonus of {(multiplier - 3)}%! (Rolled a {multiplier})')
+                await ctx.send('https://tenor.com/view/jnpr-noravalkyrie-nora-teamjnpr-rwby-gif-19309041')
 
         await ctx.send(f'{round(finalDamage, 2)} Damage Dealt!')
         attacker.buff = 1
         return [1, finalDamage]
     
 
+    #### MEDIUM MOVE ####
     @commands.command()
     @commands.has_role("Gym Rat")
     async def roidRage(self, ctx):
-        baseDamage = 10
+        baseDamage = 15
         finalDamage = 0
         multiplier = random.randrange(1, 20)
         attacker = game.get_player(ctx.author)
@@ -146,15 +147,15 @@ class GymRat(commands.Cog):
 
         # High Roll
         elif multiplier > 18 and multiplier <= 20:
-            baseDamage = 14
+            baseDamage = 17
             if sb == 2:
-                finalDamage = 40
+                finalDamage = 30
                 await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills paired with you GOD COMPLEX!')
-                await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
+                await ctx.send('https://tenor.com/view/ba%C5%9Fak-ba%C5%9Fakkarabay%C4%B1r-da%C5%9Fak-ta%C5%9Fak-da%C5%9Fak-karabay%C4%B1r-gif-18285709')
             else:
                 finalDamage = baseDamage + round(((((multiplier - 3)/100) * baseDamage) * sb), 2)
                 await ctx.send(f'WOW {ctx.author.mention}! Your opponent was not ready for you level 15 skills. Base damage increased to {baseDamage} and has a damage bonus of {(multiplier - 3)}%! (Rolled a {multiplier})')
-                await ctx.send('https://tenor.com/view/zyzz-gif-24316331')
+                await ctx.send('https://tenor.com/view/ba%C5%9Fak-ba%C5%9Fakkarabay%C4%B1r-da%C5%9Fak-ta%C5%9Fak-da%C5%9Fak-karabay%C4%B1r-gif-18285709')
 
         await ctx.send(f'{round(finalDamage, 2)} Damage Dealt!')
         attacker.buff = 1
@@ -206,7 +207,7 @@ class GymRat(commands.Cog):
         if multiplier < 10:
             sb = 0.5 
             await ctx.send('You checked the mirror and recieved crippling body dysmorphia ' + ctx.author.mention + '! Your next move will only do half damage.')
-            await ctx.send('https://tenor.com/view/personal-record-mindovermatterfitness-fitness-gym-lifting-gif-18357628')
+            await ctx.send('https://tenor.com/view/pathetic-nolan-grayson-omni-man-invincible-pity-gif-20908860')
 
 
         # High Roll
